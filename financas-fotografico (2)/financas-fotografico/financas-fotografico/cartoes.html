@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Cartões | Finnova
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/dashboard.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="cabecalho-mobile d-lg-none">
+   <a class="marca" href="dashboard.html">
+    Finnova
+   </a>
+   <button aria-controls="menu-mobile" aria-expanded="false" aria-label="Abrir menu" class="btn botao-menu" data-bs-target="#menu-mobile" data-bs-toggle="offcanvas" type="button">
+    <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+     <path d="M4 6h16M4 12h16M4 18h16">
+     </path>
+    </svg>
+   </button>
+  </header>
+  <div aria-labelledby="titulo-menu" class="offcanvas offcanvas-start" id="menu-mobile" tabindex="-1">
+   <div class="offcanvas-header">
+    <h2 class="h5 mb-0" id="titulo-menu">
+     Finnova
+    </h2>
+    <button aria-label="Fechar menu" class="btn-close" data-bs-dismiss="offcanvas" type="button">
+    </button>
+   </div>
+   <nav aria-label="Menu principal mobile" class="offcanvas-body menu-navegacao">
+    <a class="nav-link" href="dashboard.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <rect height="7" width="7" x="3" y="3">
+      </rect>
+      <rect height="7" width="7" x="14" y="3">
+      </rect>
+      <rect height="7" width="7" x="3" y="14">
+      </rect>
+      <rect height="7" width="7" x="14" y="14">
+      </rect>
+     </svg>
+     <span>
+      Dashboard
+     </span>
+    </a>
+    <a class="nav-link" href="transacoes.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <path d="M4 7h16M4 12h16M4 17h16">
+      </path>
+      <path d="m16 4 4 3-4 3">
+      </path>
+     </svg>
+     <span>
+      Transações
+     </span>
+    </a>
+    <a class="nav-link" href="categorias.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <path d="M3 5h8v7H3zM13 5h8v7h-8zM3 14h8v7H3zM13 14h8v7h-8z">
+      </path>
+     </svg>
+     <span>
+      Categorias
+     </span>
+    </a>
+    <a class="nav-link" href="orcamentos.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <rect height="15" rx="2" width="18" x="3" y="5">
+      </rect>
+      <path d="M3 10h18M7 15h5">
+      </path>
+     </svg>
+     <span>
+      Orçamentos
+     </span>
+    </a>
+    <a class="nav-link" href="metas.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <circle cx="12" cy="12" r="9">
+      </circle>
+      <circle cx="12" cy="12" r="5">
+      </circle>
+      <circle cx="12" cy="12" r="1">
+      </circle>
+     </svg>
+     <span>
+      Metas
+     </span>
+    </a>
+    <a class="nav-link active" href="cartoes.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <rect height="14" rx="2" width="20" x="2" y="5">
+      </rect>
+      <path d="M2 10h20">
+      </path>
+     </svg>
+     <span>
+      Cartões
+     </span>
+    </a>
+    <a class="nav-link mt-4" href="login.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5M14 8l4 4-4 4M9 12h9">
+      </path>
+     </svg>
+     <span>
+      Sair
+     </span>
+    </a>
+   </nav>
+  </div>
+  <aside class="menu-lateral d-none d-lg-flex">
+   <a class="marca" href="dashboard.html">
+    Finnova
+   </a>
+   <nav aria-label="Menu principal" class="menu-navegacao">
+    <a class="nav-link" href="dashboard.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <rect height="7" width="7" x="3" y="3">
+      </rect>
+      <rect height="7" width="7" x="14" y="3">
+      </rect>
+      <rect height="7" width="7" x="3" y="14">
+      </rect>
+      <rect height="7" width="7" x="14" y="14">
+      </rect>
+     </svg>
+     <span>
+      Dashboard
+     </span>
+    </a>
+    <a class="nav-link" href="transacoes.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <path d="M4 7h16M4 12h16M4 17h16">
+      </path>
+      <path d="m16 4 4 3-4 3">
+      </path>
+     </svg>
+     <span>
+      Transações
+     </span>
+    </a>
+    <a class="nav-link" href="categorias.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <path d="M3 5h8v7H3zM13 5h8v7h-8zM3 14h8v7H3zM13 14h8v7h-8z">
+      </path>
+     </svg>
+     <span>
+      Categorias
+     </span>
+    </a>
+    <a class="nav-link" href="orcamentos.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <rect height="15" rx="2" width="18" x="3" y="5">
+      </rect>
+      <path d="M3 10h18M7 15h5">
+      </path>
+     </svg>
+     <span>
+      Orçamentos
+     </span>
+    </a>
+    <a class="nav-link" href="metas.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <circle cx="12" cy="12" r="9">
+      </circle>
+      <circle cx="12" cy="12" r="5">
+      </circle>
+      <circle cx="12" cy="12" r="1">
+      </circle>
+     </svg>
+     <span>
+      Metas
+     </span>
+    </a>
+    <a class="nav-link active" href="cartoes.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <rect height="14" rx="2" width="20" x="2" y="5">
+      </rect>
+      <path d="M2 10h20">
+      </path>
+     </svg>
+     <span>
+      Cartões
+     </span>
+    </a>
+   </nav>
+   <a class="sair" href="login.html">
+    <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+     <path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5M14 8l4 4-4 4M9 12h9">
+     </path>
+    </svg>
+    Sair
+   </a>
+  </aside>
+  <div class="area-principal">
+   <header class="topo-pagina">
+    <div>
+     <h1>
+      Cartões
+     </h1>
+     <p>
+      Gerencie seus cartões e limites
+     </p>
+    </div>
+    <div class="dropdown">
+     <button aria-expanded="false" class="botao-perfil dropdown-toggle" data-bs-toggle="dropdown" type="button">
+      <span class="avatar">
+       U
+      </span>
+      Minha conta
+     </button>
+     <ul class="dropdown-menu dropdown-menu-end">
+      <li>
+       <h2 class="dropdown-header">
+        Nome do usuário
+       </h2>
+      </li>
+      <li>
+       <a class="dropdown-item" href="perfil.html">
+        Perfil
+       </a>
+      </li>
+      <li>
+       <a class="dropdown-item" href="editar-perfil.html">
+        Editar perfil
+       </a>
+      </li>
+      <li>
+       <a class="dropdown-item" href="aparencia.html">
+        Aparência
+       </a>
+      </li>
+      <li>
+       <hr class="dropdown-divider"/>
+      </li>
+      <li>
+       <a class="dropdown-item text-danger" href="login.html">
+        Sair
+       </a>
+      </li>
+     </ul>
+    </div>
+   </header>
+   <main class="conteudo-principal">
+    <div class="acoes-pagina">
+     <span>
+      Acompanhe limites e faturas
+     </span>
+     <button class="btn botao-principal" data-bs-target="#modal-cartao" data-bs-toggle="modal">
+      Novo cartão +
+     </button>
+    </div>
+    <section aria-label="Cartões cadastrados" class="row g-3">
+     <div class="col-lg-6">
+      <article class="painel cartao-credito h-100">
+       <h2>
+        Cartão principal
+       </h2>
+       <p class="texto-apoio">
+        Visa · Final 4821
+       </p>
+       <div class="detalhes-cartao">
+        <div>
+         <small>
+          Limite
+         </small>
+         <strong>
+          R$ 5.000,00
+         </strong>
+        </div>
+        <div>
+         <small>
+          Fatura atual
+         </small>
+         <strong>
+          R$ 1.250,00
+         </strong>
+        </div>
+       </div>
+       <div aria-label="Limite usado do Cartão principal" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="barra-progresso" role="progressbar">
+        <span style="width:25%">
+        </span>
+       </div>
+       <p class="texto-apoio mt-2 mb-0">
+        Fechamento: dia 18 · Vencimento: dia 25
+       </p>
+      </article>
+     </div>
+     <div class="col-lg-6">
+      <article class="painel cartao-credito h-100">
+       <h2>
+        Cartão secundário
+       </h2>
+       <p class="texto-apoio">
+        Mastercard · Final 7732
+       </p>
+       <div class="detalhes-cartao">
+        <div>
+         <small>
+          Limite
+         </small>
+         <strong>
+          R$ 2.500,00
+         </strong>
+        </div>
+        <div>
+         <small>
+          Fatura atual
+         </small>
+         <strong>
+          R$ 640,00
+         </strong>
+        </div>
+       </div>
+       <div aria-label="Limite usado do Cartão secundário" aria-valuemax="100" aria-valuemin="0" aria-valuenow="26" class="barra-progresso" role="progressbar">
+        <span style="width:26%">
+        </span>
+       </div>
+       <p class="texto-apoio mt-2 mb-0">
+        Fechamento: dia 03 · Vencimento: dia 10
+       </p>
+      </article>
+     </div>
+    </section>
+   </main>
+  </div>
+  <div aria-hidden="true" aria-labelledby="titulo-modal-cartao" class="modal fade" id="modal-cartao" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h2 class="modal-title fs-5" id="titulo-modal-cartao">
+       Novo cartão
+      </h2>
+      <button aria-label="Fechar" class="btn-close" data-bs-dismiss="modal" type="button">
+      </button>
+     </div>
+     <form class="formulario-demonstracao">
+      <div class="modal-body">
+       <div class="grupo-campo">
+        <label for="apelido-cartao">
+         Apelido
+        </label>
+        <input class="form-control" id="apelido-cartao" name="apelido-cartao" placeholder="Ex.: Cartão principal" required="" type="text"/>
+       </div>
+       <div class="grupo-campo">
+        <label for="bandeira-cartao">
+         Bandeira
+        </label>
+        <select class="form-select" id="bandeira-cartao" name="bandeira-cartao" required="">
+         <option value="">
+          Selecione
+         </option>
+         <option>
+          Visa
+         </option>
+         <option>
+          Mastercard
+         </option>
+         <option>
+          Elo
+         </option>
+         <option>
+          American Express
+         </option>
+         <option>
+          Outra
+         </option>
+        </select>
+       </div>
+       <div class="grupo-campo">
+        <label for="final-cartao">
+         Final do cartão
+        </label>
+        <input class="form-control" id="final-cartao" inputmode="numeric" maxlength="4" name="final-cartao" pattern="[0-9]{4}" placeholder="0000" required="" type="text"/>
+       </div>
+       <div class="grupo-campo">
+        <label for="limite-cartao">
+         Limite
+        </label>
+        <input class="form-control" id="limite-cartao" min="0.01" name="limite-cartao" placeholder="0,00" required="" step="0.01" type="number"/>
+       </div>
+       <div class="grupo-campo">
+        <label for="fechamento-cartao">
+         Dia de fechamento
+        </label>
+        <input class="form-control" id="fechamento-cartao" max="31" min="1" name="fechamento-cartao" placeholder="1 a 31" required="" type="number"/>
+       </div>
+       <div class="grupo-campo">
+        <label for="vencimento-cartao">
+         Dia de vencimento
+        </label>
+        <input class="form-control" id="vencimento-cartao" max="31" min="1" name="vencimento-cartao" placeholder="1 a 31" required="" type="number"/>
+       </div>
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-outline-secondary" data-bs-dismiss="modal" type="button">
+        Cancelar
+       </button>
+       <button class="btn botao-principal" type="submit">
+        Salvar
+       </button>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/dashboard.js">
+  </script>
+ </body>
+</html>

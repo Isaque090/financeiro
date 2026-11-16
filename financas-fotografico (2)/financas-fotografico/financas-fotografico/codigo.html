@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar código | Finanças</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js" defer></script>
+</head>
+
+<body>
+    <main class="painel-marca">
+        <img class="foto-marca"
+            src="https://images.pexels.com/photos/34147402/pexels-photo-34147402.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400"
+            alt="" loading="eager" fetchpriority="high">
+        <div class="conteudo">
+            <a class="logo" href="login.html" aria-label="Finanças, página inicial">Finanças<span
+                    class="ponto-logo">.</span></a>
+            <div class="mensagem-marca">
+                <p class="identificador">FINANÇAS PESSOAIS</p>
+                <h2>Organize sua vida financeira.</h2>
+                <p>Mais clareza para os seus objetivos.</p>
+            </div>
+            <p class="rodape-marca">© 2026 Finanças</p>
+        </div>
+    </main>
+    <section class="login" aria-labelledby="titulo-pagina">
+        <div class="area-formulario">
+            <div class="cabecalho-mobile">Finanças<span>.</span></div>
+            <div class="cartao-formulario">
+                <p class="identificador identificador-formulario">VERIFICAÇÃO DE ACESSO</p>
+                <h1 id="titulo-pagina">Digite o código</h1>
+                <p class="subtitulo">Informe o código de seis dígitos enviado para seu e-mail.</p>
+                <form method="post" action="" class="formulario" novalidate>
+                    <div class="grupo-campo"><label for="codigo-1">Código</label>
+                        <div class="campos-codigo" role="group" aria-label="Código de seis dígitos"><input id="codigo-1"
+                                name="codigo_1" type="text" inputmode="numeric" pattern="[0-9]" maxlength="1"
+                                autocomplete="one-time-code" aria-label="Dígito 1" required><input id="codigo-2"
+                                name="codigo_2" type="text" inputmode="numeric" pattern="[0-9]" maxlength="1"
+                                autocomplete="off" aria-label="Dígito 2" required><input id="codigo-3" name="codigo_3"
+                                type="text" inputmode="numeric" pattern="[0-9]" maxlength="1" autocomplete="off"
+                                aria-label="Dígito 3" required><input id="codigo-4" name="codigo_4" type="text"
+                                inputmode="numeric" pattern="[0-9]" maxlength="1" autocomplete="off"
+                                aria-label="Dígito 4" required><input id="codigo-5" name="codigo_5" type="text"
+                                inputmode="numeric" pattern="[0-9]" maxlength="1" autocomplete="off"
+                                aria-label="Dígito 5" required><input id="codigo-6" name="codigo_6" type="text"
+                                inputmode="numeric" pattern="[0-9]" maxlength="1" autocomplete="off"
+                                aria-label="Dígito 6" required></div>
+                    </div>
+                    <button class="botao-principal" type="submit">Enviar</button>
+                    <p class="texto-alternativo"><button type="button" class="link-texto" id="reenviar-codigo">Reenviar
+                            o código</button></p>
+                </form>
+            </div>
+            <p class="rodape-formulario">© 2026 Finanças. Todos os direitos reservados.</p>
+        </div>
+    </section>
+</body>
+
+</html>

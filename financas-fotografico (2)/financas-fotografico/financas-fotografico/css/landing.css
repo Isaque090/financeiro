@@ -1,0 +1,30 @@
+/* Estrutura pública */
+body { font-family: "Inter", system-ui, sans-serif; color: #1c2924; background: #fff; }
+:focus-visible { outline: 3px solid #7dbda1 !important; outline-offset: 3px; }
+.cabecalho-publico { background: #fff; border-bottom: 1px solid #dfe6df; min-height: 76px; }
+.marca-publica { font-weight: 700; font-size: 24px; color: #1c2924; text-decoration: none; }
+.navegacao-publica a { color: #344a3c; text-decoration: none; font-weight: 500; }
+.navegacao-publica a:hover { color: #23764f; }
+.botao-principal { min-height: 45px; background: #23764f; border: 1px solid #23764f; color: #fff; font-weight: 600; }
+.botao-principal:hover { background: #185d3c; border-color: #185d3c; color: #fff; }
+.botao-secundario { min-height: 45px; border: 1px solid #a7b9ac; color: #185d3c; font-weight: 600; }
+.botao-secundario:hover { background: #eef4ef; }
+.hero { padding: 80px 0; background: #f4f6f4; }
+.hero h1 { font-size: clamp(35px,5vw,62px); font-weight: 700; line-height: 1.12; letter-spacing: -.04em; }
+.hero p { font-size: 17px; line-height: 1.7; color: #52665a; }
+.foto-hero { width: 100%; height: 440px; object-fit: cover; background: #d9e4db; border-radius: 9px; }
+.secao-publica { padding: 80px 0; }
+.secao-publica h2 { font-size: clamp(27px,3vw,37px); font-weight: 700; }
+.cartao-recurso { height: 100%; border: 1px solid #dfe6df; border-radius: 9px; padding: 25px; }
+.cartao-recurso svg { width: 25px; height: 25px; color: #23764f; margin-bottom: 18px; }
+.cartao-recurso h3 { font-size: 18px; font-weight: 700; }
+.cartao-recurso p { color: #596b60; margin-bottom: 0; }
+.fundo-suave { background: #f4f6f4; }
+.captura-produto { display: block; width: 100%; aspect-ratio: 16/10; object-fit: contain; border: 1px solid #dfe6df; border-radius: 9px; background: #e8eee9; }
+.passo { border-top: 2px solid #23764f; padding-top: 22px; }
+.passo strong { color: #23764f; }
+.accordion-button:not(.collapsed) { background: #e8f1e9; color: #185d3c; }
+.accordion-button:focus { box-shadow: 0 0 0 3px #23764f33; }
+.rodape-publico { background: #222a28; color: #e2eae3; padding: 32px 0; }
+.rodape-publico a { color: #e2eae3; }
+@media (max-width: 767px) { .hero { padding: 45px 0; } .foto-hero { height: 260px; } .secao-publica { padding: 52px 0; } }

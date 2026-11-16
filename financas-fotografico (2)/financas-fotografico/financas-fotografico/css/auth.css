@@ -1,0 +1,29 @@
+/* Estrutura de autenticação */
+body { margin: 0; background: #f4f6f4; color: #1c2924; font-family: "Inter", system-ui, sans-serif; }
+.auth-layout { min-height: 100vh; display: grid; grid-template-columns: 1fr; }
+.auth-marca { display: none; background: #222a28; color: #fff; position: relative; background-image: linear-gradient(#101d16a8,#101d16a8), url('../assets/img/auth-ambiente.jpg'); background-size: cover; background-position: center; padding: 44px; }
+.auth-marca .marca { color: #fff; font-size: 23px; font-weight: 700; }
+.auth-frase { margin-top: auto; max-width: 450px; }
+.auth-frase h2 { font-size: clamp(32px,3vw,48px); font-weight: 700; line-height: 1.15; }
+.auth-frase p { color: #e0e9e1; }
+.auth-area { display: grid; place-items: center; padding: 24px 16px; }
+.auth-card { width: min(100%,480px); background: white; border: 1px solid #dfe6df; border-radius: 9px; padding: clamp(24px,4vw,42px); box-shadow: 0 2px 7px #1b30230a; }
+.auth-card h1 { font-size: 28px; font-weight: 700; margin: 12px 0 8px; }
+.auth-card .texto-apoio { color: #627268; margin-bottom: 26px; }
+.auth-card .marca-mobile { font-size: 22px; color: #23764f; font-weight: 700; text-decoration: none; }
+.auth-card .grupo-campo { margin-bottom: 16px; }
+.auth-card label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 7px; }
+.auth-card .form-control { min-height: 46px; border: 1px solid #cbd5cd; border-radius: 6px; }
+.auth-card .form-control:hover { border-color: #8a9d8e; }
+.auth-card .form-control:focus { border-color: #23764f; box-shadow: 0 0 0 3px #23764f22; }
+.auth-card .form-control:disabled { background: #edf0ed; }
+.auth-card .form-control.is-invalid { border-color: #ad3837; }
+.auth-card .botao-principal { width: 100%; min-height: 45px; background: #23764f; color: white; border: 1px solid #23764f; font-weight: 600; }
+.auth-card .botao-principal:hover { background: #185d3c; }
+.auth-card .botao-principal:active { background: #124b30; }
+.auth-card a { color: #17653e; }
+.auth-card a:focus-visible, .auth-card button:focus-visible, .auth-card input:focus-visible { outline: 3px solid #7dbda1; outline-offset: 2px; }
+.botao-senha { min-width: 46px; border-color: #cbd5cd; }
+.codigo-campos { display: flex; gap: 8px; }
+.codigo-campos input { width: 100%; min-width: 0; text-align: center; font-size: 22px; font-weight: 700; }
+@media (min-width: 992px) { .auth-layout { grid-template-columns: minmax(0,44%) minmax(0,56%); } .auth-marca { display: flex; flex-direction: column; } }

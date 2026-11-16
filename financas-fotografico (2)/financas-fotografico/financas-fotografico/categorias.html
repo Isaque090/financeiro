@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Categorias | Finnova
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/dashboard.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="cabecalho-mobile d-lg-none">
+   <a class="marca" href="dashboard.html">
+    Finnova
+   </a>
+   <button aria-controls="menu-mobile" aria-expanded="false" aria-label="Abrir menu" class="btn botao-menu" data-bs-target="#menu-mobile" data-bs-toggle="offcanvas" type="button">
+    <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+     <path d="M4 6h16M4 12h16M4 18h16">
+     </path>
+    </svg>
+   </button>
+  </header>
+  <div aria-labelledby="titulo-menu" class="offcanvas offcanvas-start" id="menu-mobile" tabindex="-1">
+   <div class="offcanvas-header">
+    <h2 class="h5 mb-0" id="titulo-menu">
+     Finnova
+    </h2>
+    <button aria-label="Fechar menu" class="btn-close" data-bs-dismiss="offcanvas" type="button">
+    </button>
+   </div>
+   <nav aria-label="Menu principal mobile" class="offcanvas-body menu-navegacao">
+    <a class="nav-link" href="dashboard.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <rect height="7" width="7" x="3" y="3">
+      </rect>
+      <rect height="7" width="7" x="14" y="3">
+      </rect>
+      <rect height="7" width="7" x="3" y="14">
+      </rect>
+      <rect height="7" width="7" x="14" y="14">
+      </rect>
+     </svg>
+     <span>
+      Dashboard
+     </span>
+    </a>
+    <a class="nav-link" href="transacoes.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <path d="M4 7h16M4 12h16M4 17h16">
+      </path>
+      <path d="m16 4 4 3-4 3">
+      </path>
+     </svg>
+     <span>
+      Transações
+     </span>
+    </a>
+    <a class="nav-link active" href="categorias.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <path d="M3 5h8v7H3zM13 5h8v7h-8zM3 14h8v7H3zM13 14h8v7h-8z">
+      </path>
+     </svg>
+     <span>
+      Categorias
+     </span>
+    </a>
+    <a class="nav-link" href="orcamentos.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <rect height="15" rx="2" width="18" x="3" y="5">
+      </rect>
+      <path d="M3 10h18M7 15h5">
+      </path>
+     </svg>
+     <span>
+      Orçamentos
+     </span>
+    </a>
+    <a class="nav-link" href="metas.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <circle cx="12" cy="12" r="9">
+      </circle>
+      <circle cx="12" cy="12" r="5">
+      </circle>
+      <circle cx="12" cy="12" r="1">
+      </circle>
+     </svg>
+     <span>
+      Metas
+     </span>
+    </a>
+    <a class="nav-link" href="cartoes.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <rect height="14" rx="2" width="20" x="2" y="5">
+      </rect>
+      <path d="M2 10h20">
+      </path>
+     </svg>
+     <span>
+      Cartões
+     </span>
+    </a>
+    <a class="nav-link mt-4" href="login.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5M14 8l4 4-4 4M9 12h9">
+      </path>
+     </svg>
+     <span>
+      Sair
+     </span>
+    </a>
+   </nav>
+  </div>
+  <aside class="menu-lateral d-none d-lg-flex">
+   <a class="marca" href="dashboard.html">
+    Finnova
+   </a>
+   <nav aria-label="Menu principal" class="menu-navegacao">
+    <a class="nav-link" href="dashboard.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <rect height="7" width="7" x="3" y="3">
+      </rect>
+      <rect height="7" width="7" x="14" y="3">
+      </rect>
+      <rect height="7" width="7" x="3" y="14">
+      </rect>
+      <rect height="7" width="7" x="14" y="14">
+      </rect>
+     </svg>
+     <span>
+      Dashboard
+     </span>
+    </a>
+    <a class="nav-link" href="transacoes.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <path d="M4 7h16M4 12h16M4 17h16">
+      </path>
+      <path d="m16 4 4 3-4 3">
+      </path>
+     </svg>
+     <span>
+      Transações
+     </span>
+    </a>
+    <a class="nav-link active" href="categorias.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <path d="M3 5h8v7H3zM13 5h8v7h-8zM3 14h8v7H3zM13 14h8v7h-8z">
+      </path>
+     </svg>
+     <span>
+      Categorias
+     </span>
+    </a>
+    <a class="nav-link" href="orcamentos.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <rect height="15" rx="2" width="18" x="3" y="5">
+      </rect>
+      <path d="M3 10h18M7 15h5">
+      </path>
+     </svg>
+     <span>
+      Orçamentos
+     </span>
+    </a>
+    <a class="nav-link" href="metas.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <circle cx="12" cy="12" r="9">
+      </circle>
+      <circle cx="12" cy="12" r="5">
+      </circle>
+      <circle cx="12" cy="12" r="1">
+      </circle>
+     </svg>
+     <span>
+      Metas
+     </span>
+    </a>
+    <a class="nav-link" href="cartoes.html">
+     <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+      <rect height="14" rx="2" width="20" x="2" y="5">
+      </rect>
+      <path d="M2 10h20">
+      </path>
+     </svg>
+     <span>
+      Cartões
+     </span>
+    </a>
+   </nav>
+   <a class="sair" href="login.html">
+    <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+     <path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5M14 8l4 4-4 4M9 12h9">
+     </path>
+    </svg>
+    Sair
+   </a>
+  </aside>
+  <div class="area-principal">
+   <header class="topo-pagina">
+    <div>
+     <h1>
+      Categorias
+     </h1>
+     <p>
+      Organize suas movimentações por categoria
+     </p>
+    </div>
+    <div class="dropdown">
+     <button aria-expanded="false" class="botao-perfil dropdown-toggle" data-bs-toggle="dropdown" type="button">
+      <span class="avatar">
+       U
+      </span>
+      Minha conta
+     </button>
+     <ul class="dropdown-menu dropdown-menu-end">
+      <li>
+       <h2 class="dropdown-header">
+        Nome do usuário
+       </h2>
+      </li>
+      <li>
+       <a class="dropdown-item" href="perfil.html">
+        Perfil
+       </a>
+      </li>
+      <li>
+       <a class="dropdown-item" href="editar-perfil.html">
+        Editar perfil
+       </a>
+      </li>
+      <li>
+       <a class="dropdown-item" href="aparencia.html">
+        Aparência
+       </a>
+      </li>
+      <li>
+       <hr class="dropdown-divider"/>
+      </li>
+      <li>
+       <a class="dropdown-item text-danger" href="login.html">
+        Sair
+       </a>
+      </li>
+     </ul>
+    </div>
+   </header>
+   <main class="conteudo-principal">
+    <div class="acoes-pagina">
+     <span>
+      6 categorias cadastradas
+     </span>
+     <button class="btn botao-principal" data-bs-target="#modal-categoria" data-bs-toggle="modal">
+      Nova categoria +
+     </button>
+    </div>
+    <section class="painel mb-3">
+     <div class="row g-3 align-items-center">
+      <div class="col-md-6">
+       <label class="visually-hidden" for="buscar-categorias">
+        Buscar categorias
+       </label>
+       <input class="form-control" id="buscar-categorias" placeholder="Buscar categorias"/>
+      </div>
+      <div class="col-md-6">
+       <div aria-label="Filtrar categorias" class="filtros-pilula" role="group">
+        <button class="btn ativo" data-filtro="todas" type="button">
+         Todas
+        </button>
+        <button class="btn" data-filtro="despesa" type="button">
+         Despesas
+        </button>
+        <button class="btn" data-filtro="receita" type="button">
+         Receitas
+        </button>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section aria-label="Categorias" class="row g-3">
+     <div class="col-md-6 col-xl-4">
+      <article class="cartao-categoria h-100">
+       <div class="categoria-cabecalho">
+        <span class="icone-categoria cor-laranja">
+         <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+          <path d="M5 3v8M8 3v8M5 8h3M6.5 11v10M17 3c-5 2-5 10 0 10v8">
+          </path>
+         </svg>
+        </span>
+        <div class="dropdown">
+         <button aria-label="Ações de Alimentação" class="btn botao-opcoes" data-bs-toggle="dropdown">
+          <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+           <circle cx="12" cy="5" r="1">
+           </circle>
+           <circle cx="12" cy="12" r="1">
+           </circle>
+           <circle cx="12" cy="19" r="1">
+           </circle>
+          </svg>
+         </button>
+         <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+           <button class="dropdown-item" data-bs-target="#modal-categoria" data-bs-toggle="modal">
+            <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+             <path d="m4 20 4.5-1 11-11a2 2 0 0 0-3-3l-11 11L4 20z">
+             </path>
+            </svg>
+            Editar
+           </button>
+          </li>
+          <li>
+           <button class="dropdown-item text-danger acao-excluir">
+            <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+             <path d="M4 7h16M10 4h4M6 7l1 13h10l1-13M10 11v6M14 11v6">
+             </path>
+            </svg>
+            Excluir
+           </button>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <h3>
+        Alimentação
+       </h3>
+       <span class="etiqueta etiqueta-despesa">
+        Despesa
+       </span>
+       <div class="categoria-rodape">
+        <div>
+         <small>
+          Este mês
+         </small>
+         <strong class="texto-despesa">
+          R$ 312,00
+         </strong>
+        </div>
+        <span>
+         1 transação
+        </span>
+       </div>
+      </article>
+     </div>
+     <div class="col-md-6 col-xl-4">
+      <article class="cartao-categoria h-100">
+       <div class="categoria-cabecalho">
+        <span class="icone-categoria cor-azul">
+         <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+          <path d="m3 11 9-8 9 8M5 10v11h14V10M10 21v-7h4v7">
+          </path>
+         </svg>
+        </span>
+        <div class="dropdown">
+         <button aria-label="Ações de Moradia" class="btn botao-opcoes" data-bs-toggle="dropdown">
+          <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+           <circle cx="12" cy="5" r="1">
+           </circle>
+           <circle cx="12" cy="12" r="1">
+           </circle>
+           <circle cx="12" cy="19" r="1">
+           </circle>
+          </svg>
+         </button>
+         <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+           <button class="dropdown-item" data-bs-target="#modal-categoria" data-bs-toggle="modal">
+            <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+             <path d="m4 20 4.5-1 11-11a2 2 0 0 0-3-3l-11 11L4 20z">
+             </path>
+            </svg>
+            Editar
+           </button>
+          </li>
+          <li>
+           <button class="dropdown-item text-danger acao-excluir">
+            <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+             <path d="M4 7h16M10 4h4M6 7l1 13h10l1-13M10 11v6M14 11v6">
+             </path>
+            </svg>
+            Excluir
+           </button>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <h3>
+        Moradia
+       </h3>
+       <span class="etiqueta etiqueta-despesa">
+        Despesa
+       </span>
+       <div class="categoria-rodape">
+        <div>
+         <small>
+          Este mês
+         </small>
+         <strong class="texto-despesa">
+          R$ 1.200,00
+         </strong>
+        </div>
+        <span>
+         1 transação
+        </span>
+       </div>
+      </article>
+     </div>
+     <div class="col-md-6 col-xl-4">
+      <article class="cartao-categoria h-100">
+       <div class="categoria-cabecalho">
+        <span class="icone-categoria cor-roxo">
+         <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+          <rect height="11" rx="2" width="16" x="4" y="7">
+          </rect>
+          <path d="m7 7 2-4h6l2 4M7 18v3M17 18v3M7 14h2M15 14h2">
+          </path>
+         </svg>
+        </span>
+        <div class="dropdown">
+         <button aria-label="Ações de Transporte" class="btn botao-opcoes" data-bs-toggle="dropdown">
+          <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+           <circle cx="12" cy="5" r="1">
+           </circle>
+           <circle cx="12" cy="12" r="1">
+           </circle>
+           <circle cx="12" cy="19" r="1">
+           </circle>
+          </svg>
+         </button>
+         <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+           <button class="dropdown-item" data-bs-target="#modal-categoria" data-bs-toggle="modal">
+            <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+             <path d="m4 20 4.5-1 11-11a2 2 0 0 0-3-3l-11 11L4 20z">
+             </path>
+            </svg>
+            Editar
+           </button>
+          </li>
+          <li>
+           <button class="dropdown-item text-danger acao-excluir">
+            <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+             <path d="M4 7h16M10 4h4M6 7l1 13h10l1-13M10 11v6M14 11v6">
+             </path>
+            </svg>
+            Excluir
+           </button>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <h3>
+        Transporte
+       </h3>
+       <span class="etiqueta etiqueta-despesa">
+        Despesa
+       </span>
+       <div class="categoria-rodape">
+        <div>
+         <small>
+          Este mês
+         </small>
+         <strong class="texto-despesa">
+          R$ 180,80
+         </strong>
+        </div>
+        <span>
+         2 transações
+        </span>
+       </div>
+      </article>
+     </div>
+     <div class="col-md-6 col-xl-4">
+      <article class="cartao-categoria h-100">
+       <div class="categoria-cabecalho">
+        <span class="icone-categoria cor-vermelho">
+         <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+          <path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3zM9 8h6M9 12h6">
+          </path>
+         </svg>
+        </span>
+        <div class="dropdown">
+         <button aria-label="Ações de Contas" class="btn botao-opcoes" data-bs-toggle="dropdown">
+          <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+           <circle cx="12" cy="5" r="1">
+           </circle>
+           <circle cx="12" cy="12" r="1">
+           </circle>
+           <circle cx="12" cy="19" r="1">
+           </circle>
+          </svg>
+         </button>
+         <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+           <button class="dropdown-item" data-bs-target="#modal-categoria" data-bs-toggle="modal">
+            <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+             <path d="m4 20 4.5-1 11-11a2 2 0 0 0-3-3l-11 11L4 20z">
+             </path>
+            </svg>
+            Editar
+           </button>
+          </li>
+          <li>
+           <button class="dropdown-item text-danger acao-excluir">
+            <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+             <path d="M4 7h16M10 4h4M6 7l1 13h10l1-13M10 11v6M14 11v6">
+             </path>
+            </svg>
+            Excluir
+           </button>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <h3>
+        Contas
+       </h3>
+       <span class="etiqueta etiqueta-despesa">
+        Despesa
+       </span>
+       <div class="categoria-rodape">
+        <div>
+         <small>
+          Este mês
+         </small>
+         <strong class="texto-despesa">
+          R$ 0,00
+         </strong>
+        </div>
+        <span>
+         0 transações
+        </span>
+       </div>
+      </article>
+     </div>
+     <div class="col-md-6 col-xl-4">
+      <article class="cartao-categoria h-100">
+       <div class="categoria-cabecalho">
+        <span class="icone-categoria cor-verde">
+         <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+          <circle cx="12" cy="12" r="9">
+          </circle>
+          <path d="M15 8c-2-2-6-1-6 2 0 4 6 1 6 5 0 3-4 4-6 2M12 5v14">
+          </path>
+         </svg>
+        </span>
+        <div class="dropdown">
+         <button aria-label="Ações de Renda" class="btn botao-opcoes" data-bs-toggle="dropdown">
+          <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+           <circle cx="12" cy="5" r="1">
+           </circle>
+           <circle cx="12" cy="12" r="1">
+           </circle>
+           <circle cx="12" cy="19" r="1">
+           </circle>
+          </svg>
+         </button>
+         <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+           <button class="dropdown-item" data-bs-target="#modal-categoria" data-bs-toggle="modal">
+            <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+             <path d="m4 20 4.5-1 11-11a2 2 0 0 0-3-3l-11 11L4 20z">
+             </path>
+            </svg>
+            Editar
+           </button>
+          </li>
+          <li>
+           <button class="dropdown-item text-danger acao-excluir">
+            <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+             <path d="M4 7h16M10 4h4M6 7l1 13h10l1-13M10 11v6M14 11v6">
+             </path>
+            </svg>
+            Excluir
+           </button>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <h3>
+        Renda
+       </h3>
+       <span class="etiqueta etiqueta-receita">
+        Receita
+       </span>
+       <div class="categoria-rodape">
+        <div>
+         <small>
+          Este mês
+         </small>
+         <strong class="texto-receita">
+          R$ 5.150,00
+         </strong>
+        </div>
+        <span>
+         1 transação
+        </span>
+       </div>
+      </article>
+     </div>
+     <div class="col-md-6 col-xl-4">
+      <article class="cartao-categoria h-100">
+       <div class="categoria-cabecalho">
+        <span class="icone-categoria cor-laranja">
+         <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+          <path d="m2 9 10-5 10 5-10 5L2 9zM6 12v5c4 3 8 3 12 0v-5M22 9v7">
+          </path>
+         </svg>
+        </span>
+        <div class="dropdown">
+         <button aria-label="Ações de Educação" class="btn botao-opcoes" data-bs-toggle="dropdown">
+          <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+           <circle cx="12" cy="5" r="1">
+           </circle>
+           <circle cx="12" cy="12" r="1">
+           </circle>
+           <circle cx="12" cy="19" r="1">
+           </circle>
+          </svg>
+         </button>
+         <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+           <button class="dropdown-item" data-bs-target="#modal-categoria" data-bs-toggle="modal">
+            <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+             <path d="m4 20 4.5-1 11-11a2 2 0 0 0-3-3l-11 11L4 20z">
+             </path>
+            </svg>
+            Editar
+           </button>
+          </li>
+          <li>
+           <button class="dropdown-item text-danger acao-excluir">
+            <svg aria-hidden="true" class="icone-linha" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+             <path d="M4 7h16M10 4h4M6 7l1 13h10l1-13M10 11v6M14 11v6">
+             </path>
+            </svg>
+            Excluir
+           </button>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <h3>
+        Educação
+       </h3>
+       <span class="etiqueta etiqueta-despesa">
+        Despesa
+       </span>
+       <div class="categoria-rodape">
+        <div>
+         <small>
+          Este mês
+         </small>
+         <strong class="texto-despesa">
+          R$ 150,00
+         </strong>
+        </div>
+        <span>
+         1 transação
+        </span>
+       </div>
+      </article>
+     </div>
+    </section>
+   </main>
+  </div>
+  <div aria-hidden="true" aria-labelledby="titulo-modal-categoria" class="modal fade" id="modal-categoria" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h2 class="modal-title fs-5" id="titulo-modal-categoria">
+       Nova categoria
+      </h2>
+      <button aria-label="Fechar" class="btn-close" data-bs-dismiss="modal" type="button">
+      </button>
+     </div>
+     <form class="formulario-demonstracao">
+      <div class="modal-body">
+       <div class="grupo-campo">
+        <label for="nome-categoria">
+         Nome
+        </label>
+        <input class="form-control" id="nome-categoria" name="nome-categoria" placeholder="Ex.: Saúde" required="" type="text"/>
+       </div>
+       <div class="grupo-campo">
+        <label for="tipo-categoria">
+         Tipo
+        </label>
+        <select class="form-select" id="tipo-categoria" name="tipo-categoria" required="">
+         <option value="">
+          Selecione
+         </option>
+         <option>
+          Despesa
+         </option>
+         <option>
+          Receita
+         </option>
+        </select>
+       </div>
+       <fieldset class="grupo-campo">
+        <legend class="form-label">
+         Cor
+        </legend>
+        <div class="amostras">
+         <label class="amostra cor-laranja">
+          <input aria-label="Laranja" checked="" name="cor" type="radio" value="laranja"/>
+         </label>
+         <label class="amostra cor-azul">
+          <input aria-label="Azul" name="cor" type="radio" value="azul"/>
+         </label>
+         <label class="amostra cor-roxo">
+          <input aria-label="Roxo" name="cor" type="radio" value="roxo"/>
+         </label>
+         <label class="amostra cor-verde">
+          <input aria-label="Verde" name="cor" type="radio" value="verde"/>
+         </label>
+        </div>
+       </fieldset>
+       <div class="grupo-campo">
+        <label for="icone-categoria">
+         Ícone
+        </label>
+        <select class="form-select" id="icone-categoria" name="icone-categoria" required="">
+         <option value="">
+          Selecione
+         </option>
+         <option>
+          Alimentação
+         </option>
+         <option>
+          Moradia
+         </option>
+         <option>
+          Transporte
+         </option>
+         <option>
+          Renda
+         </option>
+         <option>
+          Educação
+         </option>
+         <option>
+          Contas
+         </option>
+         <option>
+          Saúde
+         </option>
+         <option>
+          Lazer
+         </option>
+         <option>
+          Compras
+         </option>
+         <option>
+          Viagem
+         </option>
+        </select>
+       </div>
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-outline-secondary" data-bs-dismiss="modal" type="button">
+        Cancelar
+       </button>
+       <button class="btn botao-principal" type="submit">
+        Salvar
+       </button>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/dashboard.js">
+  </script>
+ </body>
+</html>
